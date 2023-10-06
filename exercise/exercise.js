@@ -1,18 +1,23 @@
-const person = {
+const person1 = {
   id: 1,
   firstName: 'Mario',
   lastName: 'Rossi',
   age: 25,
+  address: {
+    state: 'Italy',
+    city: 'Rome',
+    street: 'Via Romano, 12'
+  }
 };
 
-const infoSelected = {
-  id : person.id,
-  age : person.age
-}
+/*
+const person2 = { ...person1 };
+person2.address.city = 'Milan';
+*/
+const conversion = JSON.stringify(person1)
+const person2 = JSON.parse(conversion)
 
+person2.address.city = "Milano"
 
-
-const json = JSON.stringify(infoSelected);
-
-console.log(json); // Should return: { id: 1, age: 25 }
-
+console.log(person1);
+console.log(person2);
