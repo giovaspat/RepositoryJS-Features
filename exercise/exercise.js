@@ -1,6 +1,15 @@
-function sum(...cifre) {
-  return cifre.reduce ((a,b)=> a + b) ;
+class Person {
+  constructor(id, firstName, lastName, age) {
+    this.id = id;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+  }
 }
 
-const numbers = [1, 2, 3];
-console.log(sum(numbers[0], numbers[1], numbers[2]));
+const developer = new Person(1, 'Mario', 'Rossi', 25);
+// Print developer as json object
+
+const developerJson = JSON.stringify(developer)
+
+console.log(developerJson)
