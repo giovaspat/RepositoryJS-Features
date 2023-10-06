@@ -1,11 +1,6 @@
-let numberStore = [0, 1, 2];
-let newNumber = 3;
+function sum(...manyNumbers) {
+    return manyNumbers.reduce((num1, num2) => num1 + num2, 0)
+    
+}
 
-numberStore = [...numberStore,newNumber]
-console.log(numberStore);
-
-/*
-numberStore.push(newNumber);
-console.log(numberStore);
-*/
-
+console.log(sum(1, 2, 3, 4, 5))
