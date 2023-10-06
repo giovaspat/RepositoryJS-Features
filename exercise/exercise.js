@@ -1,18 +1,13 @@
-const person = {
-  id: 1,
-  firstName: 'Mario',
-  lastName: 'Rossi',
-  age: 25,
-};
-
-const infoSelected = {
-  id : person.id,
-  age : person.age
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
 }
 
+const developer = new Person("Mario", "Rossi");
 
+//console.log(developer.firstName + " " + developer.lastName);
 
-const json = JSON.stringify(infoSelected);
-
-console.log(json); // Should return: { id: 1, age: 25 }
+console.log(`${developer.firstName} ${developer.lastName}`)
 
