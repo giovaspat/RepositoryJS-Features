@@ -1,3 +1,10 @@
-# Destructuring
+# Rest parameters and spread syntax
 
-The destructuring returns undefined for the properties: name, surname and old. Try fixing the code without changing the any of the object properties in the constant { id, name, surname, old }.
+Do you know how to "merge" the value of the `newNumber ` variable into `numberStore` without using the array method push?
+
+```
+let numberStore = [0, 1, 2];
+let newNumber = 3;
+numberStore.push(newNumber);
+console.log(numberStore);
+```
