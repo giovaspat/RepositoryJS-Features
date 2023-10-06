@@ -1,7 +1,3 @@
-function isAdult(age) {
-  return age >= 18;
-}
-
 const person = {
   id: 1,
   firstName: 'Mario',
@@ -9,6 +5,6 @@ const person = {
   age: 25
 };
 
-const {id,firstName,lastName,age} = person;
 
-console.log(isAdult(age));
+const { id, firstName:name, lastName:surname, age:old } = person;
+console.log(id, name, surname, old);
